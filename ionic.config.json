@@ -1,0 +1,7 @@
+{
+  "name": "baderapp",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

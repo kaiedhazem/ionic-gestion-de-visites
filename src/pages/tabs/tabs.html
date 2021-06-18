@@ -1,0 +1,7 @@
+<ion-tabs>
+  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>
+  <ion-tab [root]="tab6Root" tabTitle="Calendrier" tabIcon="calendar"></ion-tab>
+  <ion-tab *ngIf="role === 'user'" [root]="tab2Root" color="primary" tabTitle="Modifierdonnées" tabIcon="contacts"></ion-tab>
+  <ion-tab *ngIf="role === 'admin'" [root]="tab5Root" color="primary" tabTitle="AjouterUtilisateur" tabIcon="contacts"></ion-tab>
+  <ion-tab *ngIf="role === 'admin'" [root]="tab3Root" color="primary" tabTitle="Liste" tabIcon="list"></ion-tab>
+</ion-tabs>

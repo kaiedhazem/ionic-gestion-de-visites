@@ -1,0 +1,39 @@
+<ion-header>
+
+  <ion-navbar>
+    
+    <ion-title><ion-icon class="iconSize"  name="md-person-add"></ion-icon> &nbsp; Modifier données</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div >
+    <img   class="center" src="assets/imgs/gg.jpg">
+  </div>
+  <form (ngSubmit)="modifier()" #registerForm="ngForm">
+      <ion-row>
+        <ion-col>
+          <ion-list inset>
+
+            <ion-item>
+              <ion-label><ion-icon class="iconSize"  name="mail"></ion-icon></ion-label>   <ion-input type="text" placeholder="Email" name="email" [(ngModel)]="user.email" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label><ion-icon class="iconSize"  name="md-key"></ion-icon></ion-label>  <ion-input type="password" placeholder="Mot de passe" name="password" [(ngModel)]="user.password" required></ion-input>
+            </ion-item>
+
+          </ion-list>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="signup-col">
+          <button ion-button class="submit-btn" full type="submit" [disabled]="!registerForm.form.valid">Modifier</button>
+        </ion-col>
+      </ion-row>
+
+    </form>
+</ion-content>

@@ -1,0 +1,49 @@
+.box{
+    background: #f6f2f2;
+  }
+  .title{
+    text-align: center;
+  }
+  .tile{
+    color:	#07d5ca;
+    font-weight: bold;
+  }
+  
+  .circular--square {
+    border-radius: 50%;
+  }
+  .circular--square {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+  }
+  .logout{
+    color:	#07d5ca;
+  }
+  
+  .first{
+  height: 10px;
+  width: 100%;
+  background: #ddd;
+  border-radius: 10px;
+  
+  }
+  .second{
+  height: 10px;
+  background: #009200;
+  border-radius: 10px;
+  }
+  .danger{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+  }
+  .success{
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+  }
+  .green{
+    color: green;
+  }

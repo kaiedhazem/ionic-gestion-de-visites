@@ -1,0 +1,46 @@
+<ion-content class="login-content" padding>
+  <ion-row class="logo-row">
+    <ion-col>
+      <ion-title align="center">
+        
+      </ion-title>
+    </ion-col>
+  </ion-row>
+
+  <ion-card>
+    <div class="login-box">
+      <div >
+        <div >
+          <img  src="assets/imgs/gg.jpg">
+        </div>
+        <ion-row>
+          <ion-col>
+            <ion-list inset>
+
+              <ion-item>
+
+                <ion-label><ion-icon class="iconSize"  name="mail"></ion-icon></ion-label>  <ion-input  placeholder="Email"  type="email" [(ngModel)]="email" required></ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-label><ion-icon class="iconSize"  name="md-key"></ion-icon></ion-label>  <ion-input type="password" placeholder="Password" name="password" type="password" [(ngModel)]="password" required></ion-input>
+              </ion-item>
+
+            </ion-list>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="signup-col">
+            <button ion-button class="submit-btn" full type="submit" (click)="myLogIn()" >Login</button>
+          </ion-col>
+          
+        </ion-row>
+
+      </div>
+    </div>
+  </ion-card>
+
+</ion-content>
+
+

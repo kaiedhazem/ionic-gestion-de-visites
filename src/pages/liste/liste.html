@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title div="title"></ion-title> 
+    </ion-navbar>
+  </ion-header>
+
+<ion-content padding>
+
+  <h1> <u> Liste des utilisateurs: </u></h1>
+  
+  <div  *ngFor=" let mem of membres">
+
+    <ion-list >
+
+        <ion-item class="box">
+
+          <h2><ion-row ><div class="tile"> Nom : &nbsp; </div> {{mem.name}} </ion-row> </h2>  <a href="#" (click)="supprimer(mem.id)" style="float: right; "><ion-icon name="trash"></ion-icon></a> 
+          <h2><ion-row><div class="tile"> Email: &nbsp;</div> {{ mem.email }} </ion-row> </h2>
+          <h2><ion-row><div class="tile"> Role: &nbsp;</div> {{ mem.role }} </ion-row></h2>
+        
+         </ion-item>
+      
+    </ion-list>
+
+  </div>
+  
+</ion-content>
